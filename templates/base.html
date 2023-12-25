@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - {% block title %}{% endblock title %}</title>
+    <link rel="shortcut icon" href="{% static 'N_Logo.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% block others %}{% endblock others %}
+</head>
+<body class="bg-black text-gray-200">
+    {% block content %}
+    
+    {% endblock content %}     
+</body>
+</html>
